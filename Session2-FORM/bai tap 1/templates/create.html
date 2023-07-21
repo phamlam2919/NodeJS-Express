@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* Thêm CSS tại đây */
+            .card {
+                width: 50%;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                padding: 16px;
+                /* margin: 16px; */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .input-wrapper {
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+            }
+
+            .input-wrapper input {
+                width: 98%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            /* .checkbox label {
+                display: flex;
+                align-items: center;
+            } */
+
+            .checkbox input {
+                margin-right: 8px;
+            }
+
+            button {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <figure class="card">
+            <form method="POST" action="" class="create-form">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        name="productName"
+                        placeholder="Product Name"
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="image" placeholder="Image" />
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="from" placeholder="Country" />
+                </div>
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        name="nutrients"
+                        placeholder="Nutrients"
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <input
+                        type="number"
+                        name="quantity"
+                        placeholder="Quantity"
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="price" placeholder="Price" />
+                </div>
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        name="description"
+                        placeholder="Product Name"
+                    />
+                </div>
+                <div class="input-wrapper checkbox">
+                    <label for="">Organic</label>
+                    <input name="organic" type="checkbox" checked="true" />
+                </div>
+                <button>🥭🥭BOOM! Add fruit🥦🥦</button>
+            </form>
+        </figure>
+    </body>
+</html>
